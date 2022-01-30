@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3f51b5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="couleurDemarrer">#a440ff43</color>
+    <color name="couleurPause">#d7ffb940</color>
+    <color name="couleurArreter">#d5ff4340</color>
+    <color name="colorAccent">#ffff4340</color>
+</resources>

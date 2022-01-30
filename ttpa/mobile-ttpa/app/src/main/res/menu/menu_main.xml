@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.ttpa.iris.ttpamobile.MainActivity">
+    <item
+        android:id="@+id/action_statistiques"
+        android:orderInCategory="100"
+        android:title="@string/action_statistiques"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_parametres_seance"
+        android:orderInCategory="100"
+        android:title="@string/action_parametres_seance"
+        app:showAsAction="never" />
+</menu>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TTPA Mobile</string>
+    <string name="action_statistiques">Statistiques</string>
+    <string name="action_parametres_seance">Paramètres de séance</string>
+</resources>

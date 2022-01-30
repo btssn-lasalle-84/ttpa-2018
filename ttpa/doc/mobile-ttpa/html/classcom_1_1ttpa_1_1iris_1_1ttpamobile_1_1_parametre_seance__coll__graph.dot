@@ -1,0 +1,7 @@
+digraph "com.ttpa.iris.ttpamobile.ParametreSeance"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{com.ttpa.iris.ttpamobile.\lParametreSeance\n|+ MIN_FREQUENCE_PARAMETRE\l+ MAX_FREQUENCE_PARAMETRE\l+ MIN_NOMBRE_BALLES_PARAMETRE\l+ MAX_NOMBRE_BALLES_PARAMETRE\l+ MIN_PUISSANCE_BALLES\l_PARAMETRE\l+ MAX_PUISSANCE_BALLES\l_PARAMETRE\l+ MIN_ROTATION_PARAMETRE\l+ MAX_ROTATION_PARAMETRE\l- nomJoueur\l- effetBalles\l- intensiteEffet\l- puissanceBalles\l- frequenceBalles\l- rotation\l- nombreBalles\l|+ ParametreSeance()\l+ ParametreSeance()\l+ getNomJoueur()\l+ setNomJoueur()\l+ getFrequenceBalles()\l+ setFrequenceBalles()\l+ getNombreBalles()\l+ setNombreBalles()\l+ getEffetBalles()\l+ setEffetBalles()\let 12 de plus...\l~ getEffet()\l~ getEffetComplet()\l~ getIntensiteEffet()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

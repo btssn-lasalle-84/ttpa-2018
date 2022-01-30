@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>TTPA (Écran):  Fichier source de trame.h</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="icone-ttpa.png"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">TTPA (Écran)
+   &#160;<span id="projectnumber">1.1</span>
+   </div>
+   <div id="projectbrief">BTS SN-IR La Salle Avignon 2018</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Généré par Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">trame.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="trame_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef TRAME_H</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define TRAME_H</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span>
+<a name="l00004"></a>00004 <span class="preprocessor">#include &quot;<a class="code" href="ihm_8h.html" title="La fenêtre principale de l&#39;application.">ihm.h</a>&quot;</span>
+<a name="l00005"></a>00005 
+<a name="l00006"></a>00006 <span class="keyword">class </span><a class="code" href="class_c_ihm.html" title="Classe principale de l&#39;application (IHM)">CIhm</a>;
+<a name="l00007"></a>00007 
+<a name="l00019"></a><a class="code" href="class_c_trame.html">00019</a> <span class="keyword">class </span><a class="code" href="class_c_trame.html">CTrame</a> : <span class="keyword">public</span> QObject
+<a name="l00020"></a>00020 {
+<a name="l00021"></a>00021 
+<a name="l00022"></a>00022     Q_OBJECT
+<a name="l00023"></a>00023 
+<a name="l00024"></a>00024     <span class="keyword">public</span>:
+<a name="l00025"></a>00025         <a class="code" href="class_c_trame.html#ac7ca143855aefbafed2655c6892f3e75">CTrame</a>(QObject* parent = 0);
+<a name="l00026"></a>00026         <a class="code" href="class_c_trame.html#a0a8ea821e7dfb95b96c70f9fd16fee82">~CTrame</a>();
+<a name="l00027"></a>00027 
+<a name="l00028"></a>00028     signals:
+<a name="l00029"></a>00029         <span class="keywordtype">void</span>    <a class="code" href="class_c_trame.html#ac77c71ecd89f75246693654d3d75ceed">setInfoConnect</a>(QString nom); 
+<a name="l00030"></a>00030         <span class="keywordtype">void</span>    <a class="code" href="class_c_trame.html#ab399047c8e5e3a85db7e25d0eb394a78" title="voir setInfoConnect(QString nom) de CIhm">setLayerEcran</a>(uint8_t layer); 
+<a name="l00031"></a>00031         <span class="keywordtype">void</span>    <a class="code" href="class_c_trame.html#a05658f5e594ef12dcdd73c1290d1baf4" title="voir setLayerEcran(int layer) de CIhm">commencerSeance</a>(); 
+<a name="l00032"></a>00032         <span class="keywordtype">void</span>    <a class="code" href="class_c_trame.html#ae46d4b52c8d22e5c50c645376880ab69" title="voir commencerSeance() de CIhm">pauserSeance</a>(); 
+<a name="l00033"></a>00033         <span class="keywordtype">void</span>    <a class="code" href="class_c_trame.html#af8690180d2da22ff376ac4b940a089db" title="voir pauserSeance() de CIhm">reprendreSeance</a>(); 
+<a name="l00034"></a>00034         <span class="keywordtype">void</span>    <a class="code" href="class_c_trame.html#aa2dc03aba6979ca68699d721d6252cb5" title="voir reprendreSeance() de CIhm">finirSeance</a>(); 
+<a name="l00035"></a>00035         <span class="keywordtype">void</span>    <a class="code" href="class_c_trame.html#a53c0617ecba9af100eab14b64429e3a8" title="voir finirSeance() de CIhm">resetSeance</a>(); 
+<a name="l00036"></a>00036         <span class="keywordtype">void</span>    <a class="code" href="class_c_trame.html#a52d8b6b12e72b016d951057cca83d7a8" title="voir resetSeance() de CIhm">impacterZone</a>(uint8_t zone); 
+<a name="l00037"></a>00037         <span class="keywordtype">void</span>    <a class="code" href="class_c_trame.html#aeabe927dd4f47f051a0956e2c61a17c2" title="voir impacterZone(int zone) de CIhm">balleEnJeu</a>(); 
+<a name="l00038"></a>00038         <span class="keywordtype">void</span>    <a class="code" href="class_c_trame.html#a829354cb00aada0dfcf4d57bca1a0dd2" title="voir balleEnJeu() de CIhm">setZoneRobot</a>(uint8_t zone); 
+<a name="l00039"></a>00039         <span class="keywordtype">void</span>    <a class="code" href="class_c_trame.html#a9a0d6181885e2aaea7dbe4a0de6e2316" title="voir setZoneRobot(int zone) de CIhm">setZoneObjectif</a>(uint8_t zone); 
+<a name="l00040"></a>00040         <span class="keywordtype">void</span>    <a class="code" href="class_c_trame.html#a354579610d1d20e3cc25692cad889919" title="voir setZoneObjectif(int zone) de CIhm">setBallesMaximum</a>(<span class="keywordtype">int</span> balles); 
+<a name="l00041"></a>00041         <span class="keywordtype">void</span>    <a class="code" href="class_c_trame.html#a21a22c59dfe74851017432807a21eba7" title="voir setBalleMaximum(int balles) de CIhm">setFrequenceRobot</a>(<span class="keywordtype">float</span> freq); 
+<a name="l00042"></a>00042         <span class="keywordtype">void</span>    <a class="code" href="class_c_trame.html#aa242834e2b16e21eb992bccc659fd976" title="voirsetFrequenceRobot(int freq) de CTable">rafraichirCSS</a>(); 
+<a name="l00043"></a>00043         <span class="keywordtype">void</span>    <a class="code" href="class_c_trame.html#a5dfc5f8f03e2700281750ef8873d6498" title="voir rafraichirCSS() de CIhm">quitter</a>(); 
+<a name="l00045"></a>00045     <span class="keyword">public</span> slots:
+<a name="l00046"></a>00046         <span class="keywordtype">bool</span>    <a class="code" href="class_c_trame.html#a5352296d5efb37955cfb96eaa8fafaaf" title="voir quitter() de CIhm">traiterTrame</a>(QString donneesRecues); 
+<a name="l00047"></a>00047         <span class="keywordtype">bool</span>    <a class="code" href="class_c_trame.html#a278b25fcd55266f9e21fb0f7116a1cdc" title="découpe les trames de la reception">gererTrame</a>(QString donneesRecues); 
+<a name="l00049"></a>00049     <span class="keyword">private</span>:
+<a name="l00050"></a>00050         QString <a class="code" href="class_c_trame.html#a75cc04b957531116c8262b9ed059ec5a" title="extrait les elements de la trame avec extraireElement(QString donneesRecues) puis effectue les signal...">extraireElement</a>(QString donneesRecues, <span class="keyword">const</span> <span class="keywordtype">int</span> element); 
+<a name="l00052"></a>00052         <span class="keywordtype">int</span>     <a class="code" href="class_c_trame.html#af1ffeeb6f9285c19fbc9ed1c0683f9db" title="Découpe la trame et retourne l&#39;élement.">getTrameLength</a>(QString donneesRecues); 
+<a name="l00053"></a>00053         <span class="keywordtype">void</span>    <a class="code" href="class_c_trame.html#a9bb87554b720618f39e28b5e680570b1" title="Retourne la longeur de la trame.">messageNonReconnu</a>(QString donneesRecues, <span class="keywordtype">int</span> element); 
+<a name="l00054"></a>00054         <span class="keywordtype">bool</span>    <a class="code" href="class_c_trame.html#a36553943a286c5c2170a97bbb55b191e" title="Affiche les chars dans l&#39;element demandé par rapport a la liste d&#39;elements de la trame.">gererTramesSansParametre</a>(QString donneesRecues); 
+<a name="l00055"></a>00055         <span class="keywordtype">bool</span>    <a class="code" href="class_c_trame.html#ad2972fff70fc2b77fe2ee853ae2a3560" title="verrifie, identifie et execute les trames ne possédant pas de parametre">gererTrames1Parametre</a>(QString donneesRecues); 
+<a name="l00056"></a>00056 };
+<a name="l00057"></a>00057 
+<a name="l00058"></a>00058 <span class="preprocessor">#endif // TRAME_H</span>
+</pre></div></div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Généré le Jeudi Juin 7 2018 20:50:18 pour TTPA (Écran) par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

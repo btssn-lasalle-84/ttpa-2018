@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="10dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/liste_joueurs"/>
+
+            <ImageButton
+                android:id="@+id/boutonAppliquerNomJoueur"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/transparent"
+                app:srcCompat="@android:drawable/ic_menu_myplaces"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"/>
+
+            <ImageButton
+                android:id="@+id/boutonBluetooth"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/stat_sys_data_bluetooth" />
+
+            <ImageButton
+                android:id="@+id/boutonHistorique"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/transparent"
+                app:srcCompat="?android:attr/actionModeFindDrawable" />
+
+            <ImageButton
+                android:id="@+id/boutonParametres"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_roue_parametres" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/voyantTable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/table_deconnectee" />
+
+                    <ImageView
+                        android:id="@+id/voyantLanceur"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/lanceur_deconnecte" />
+
+                    <ImageView
+                        android:id="@+id/voyantEcran"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ecran_deconnecte" />
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/boutonActionSeance"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/bouton_demarrer_desactive" />
+
+            <ImageView
+                android:id="@+id/boutonArreterSeance"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:visibility="invisible"
+                android:paddingLeft="-150dp"
+                android:layout_gravity="center_vertical|left"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/bouton_arreter" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbarStyle="insideInset">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/texteNombreBalles"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Nombre de balles :"
+                            android:textSize="20dp"
+                            android:textStyle="bold"/>
+
+                        <SeekBar
+                            android:id="@+id/barreProgressionNombreBalles"
+                            style="@style/Widget.AppCompat.SeekBar.Discrete"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginRight="50dp"
+                            android:paddingStart="50dp"
+                            android:paddingEnd="50dp"
+                            android:max="19"
+                            android:progress="9"
+                            android:progressDrawable="@drawable/seekbar_style"
+                            android:splitTrack="false"
+                            android:thumb="@drawable/custom_thumb"/>
+
+                        <TextView
+                            android:id="@+id/texteValeurNombreBalles"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:textSize="15dp"
+                            android:text="-- balles" />
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/texteFrequenceBalles"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Fréquence :"
+                            android:textSize="20dp"
+                            android:textStyle="bold"/>
+
+                        <SeekBar
+                            android:id="@+id/barreProgressionFrequenceBalles"
+                            style="@style/Widget.AppCompat.SeekBar.Discrete"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginRight="50dp"
+                            android:paddingStart="50dp"
+                            android:paddingEnd="50dp"
+                            android:max="6"
+                            android:progress="3"
+                            android:progressDrawable="@drawable/seekbar_style"
+                            android:splitTrack="false"
+                            android:thumb="@drawable/custom_thumb"/>
+
+                        <TextView
+                            android:id="@+id/texteValeurFrequenceBalles"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:textSize="15dp"
+                            android:text="--/min" />
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/texteEffetBalles"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Effet :"
+                            android:textSize="20dp"
+                            android:textStyle="bold"/>
+
+                        <SeekBar
+                            android:id="@+id/barreProgressionEffetBalles"
+                            style="@style/Widget.AppCompat.SeekBar.Discrete"
+                            android:splitTrack="false"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginRight="50dp"
+                            android:paddingStart="50dp"
+                            android:paddingEnd="50dp"
+                            android:max="16"
+                            android:progress="8"
+                            android:progressDrawable="@drawable/seekbar_style"
+                            android:thumb="@drawable/custom_thumb"/>
+
+                        <TextView
+                            android:id="@+id/texteValeurEffetBalles"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:textSize="15dp"
+                            android:text="-----" />
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textePuissanceBalles"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Vitesse des balles :"
+                            android:textSize="20dp"
+                            android:textStyle="bold"/>
+
+                        <SeekBar
+                            android:id="@+id/barreProgressionPuissanceBalles"
+                            style="@style/Widget.AppCompat.SeekBar.Discrete"
+                            android:splitTrack="false"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginRight="50dp"
+                            android:paddingStart="50dp"
+                            android:paddingEnd="50dp"
+                            android:max="8"
+                            android:progress="4"
+                            android:progressDrawable="@drawable/seekbar_style"
+                            android:thumb="@drawable/custom_thumb"/>
+
+                        <TextView
+                            android:id="@+id/texteValeurPuissanceBalles"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:textSize="15dp"
+                            android:text="--%" />
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/texteRotationLanceur"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Rotation du lanceur :"
+                            android:textSize="20dp"
+                            android:textStyle="bold"/>
+
+                        <SeekBar
+                            android:id="@+id/barreProgressionRotationLanceur"
+                            style="@style/Widget.AppCompat.SeekBar.Discrete"
+                            android:splitTrack="false"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginRight="50dp"
+                            android:paddingStart="50dp"
+                            android:paddingEnd="50dp"
+                            android:max="18"
+                            android:progress="9"
+                            android:progressDrawable="@drawable/seekbar_style"
+                            android:thumb="@drawable/custom_thumb"/>
+
+                        <TextView
+                            android:id="@+id/texteValeurRotationLanceur"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:textSize="15dp"
+                            android:text="--" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
