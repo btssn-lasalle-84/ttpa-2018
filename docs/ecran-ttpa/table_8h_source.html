@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>TTPA (Écran):  Fichier source de table.h</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="icone-ttpa.png"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">TTPA (Écran)
+   &#160;<span id="projectnumber">1.1</span>
+   </div>
+   <div id="projectbrief">BTS SN-IR La Salle Avignon 2018</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Généré par Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">table.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="table_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef TABLE_H</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define TABLE_H</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span>
+<a name="l00004"></a>00004 <span class="preprocessor">#include &lt;QtGui&gt;</span>
+<a name="l00005"></a>00005 <span class="preprocessor">#include &lt;QVector&gt;</span>
+<a name="l00006"></a>00006 <span class="preprocessor">#include &quot;<a class="code" href="ihm_8h.html" title="La fenêtre principale de l&#39;application.">ihm.h</a>&quot;</span>
+<a name="l00007"></a>00007 
+<a name="l00008"></a>00008 
+<a name="l00020"></a><a class="code" href="class_c_table.html">00020</a> <span class="keyword">class </span><a class="code" href="class_c_table.html">CTable</a> : <span class="keyword">public</span> QWidget
+<a name="l00021"></a>00021 {
+<a name="l00022"></a>00022     Q_OBJECT
+<a name="l00023"></a>00023 <span class="keyword">public</span>:
+<a name="l00024"></a><a class="code" href="class_c_table.html#a33b1f6a260a21bc23998c790109e270a">00024</a>     QStringList         <a class="code" href="class_c_table.html#a33b1f6a260a21bc23998c790109e270a">m_args</a>;
+<a name="l00025"></a><a class="code" href="class_c_table.html#a5f78433daf72806e6d436536a1aad59d">00025</a>     QLabel*             <a class="code" href="class_c_table.html#a5f78433daf72806e6d436536a1aad59d">m_pOverlayText</a>;
+<a name="l00026"></a>00026 
+<a name="l00027"></a>00027     <span class="keyword">explicit</span> <a class="code" href="class_c_table.html#a363160aaa000d9996774406f440a98d0">CTable</a>(QWidget *parent = 0);
+<a name="l00028"></a>00028 
+<a name="l00029"></a>00029     <span class="keywordtype">void</span> <a class="code" href="class_c_table.html#ae7aa0d26d05e74da9c1cf9234ad5ab86">setFiletTaille</a>(<span class="keywordtype">float</span> ratio); 
+<a name="l00030"></a>00030     <span class="keywordtype">void</span> <a class="code" href="class_c_table.html#a6946500ba2a265b1c11b03cfcfffc9c7" title="Definis la hauteur du filet en utilisant la hauteur de la fenetre actuelle.">rafraichirCSS</a>(<span class="keywordtype">float</span> ratio); 
+<a name="l00033"></a>00033     <span class="keywordtype">bool</span> <a class="code" href="class_c_table.html#a9d03a58a53e22518125711957fb58220" title="Rafraichit le CSS en utilisant la hauteur de la fenetre actuelle.">impacterZone</a>(uint8_t numeroZone); 
+<a name="l00034"></a>00034     <span class="keywordtype">void</span> <a class="code" href="class_c_table.html#a473d4971b1e793849fc465bdccf60bea" title="Calcul et affiche l&#39;impact sur l&#39;IHM et la table.">setZoneRobot</a>(uint8_t zone); 
+<a name="l00035"></a>00035     <span class="keywordtype">void</span> <a class="code" href="class_c_table.html#ada62284b4f684290107cebf5a29a5905" title="Place le robot sur la table.">setZoneObjectif</a>(uint8_t zone); 
+<a name="l00036"></a>00036     <span class="keywordtype">void</span> <a class="code" href="class_c_table.html#aa648025555cf8a4461c268dd5f91cfc9" title="Place la zone objectif sur la table.">resetSeance</a>(); 
+<a name="l00037"></a>00037     <span class="keywordtype">void</span> <a class="code" href="class_c_table.html#a22c8a876a1df75c81f2abc627c59f387" title="Reset complet des variables des statistiques.">resetStatistiques</a>(); 
+<a name="l00038"></a>00038     <span class="keywordtype">void</span> <a class="code" href="class_c_table.html#a4c1dbcd20595221292dc8d46e450719b" title="Reset des statistiques uniquement.">balleEnJeu</a>(); 
+<a name="l00039"></a>00039     <span class="keywordtype">void</span> <a class="code" href="class_c_table.html#a0df73425af3a4ce1872a14eb77fd5f57" title="La balle a bien été mise en jeu par la machine, BalleTotal est incrémenté">resetNbBallesZone</a>(); 
+<a name="l00040"></a>00040     <span class="keywordtype">void</span> <a class="code" href="class_c_table.html#a68715b36e24ae7c97c509eccd769ffee" title="Reset du nombre de balles dans chaque zone.">finirSeance</a>();
+<a name="l00041"></a>00041 
+<a name="l00042"></a>00042     <span class="keywordtype">int</span> <a class="code" href="class_c_table.html#a87e52504d2a4fe7d61d9471f99196874">getBallesBonnes</a>();  
+<a name="l00043"></a>00043     <span class="keywordtype">int</span> <a class="code" href="class_c_table.html#a960a881c3abd6c35a06d52d4682bb55a" title="Récupere le nombre de balles ayant été jouées et renvoyé par le joueur.">getBallesTotal</a>(); 
+<a name="l00044"></a>00044     <span class="keywordtype">int</span> <a class="code" href="class_c_table.html#abde0844e2153c9d9405d5498b966bcc8" title="Récupere le nombre de balles ayant été jouées par la machine (en comptant celles n&#39;ayant pas atteint ...">getBallesMaximum</a>(); 
+<a name="l00045"></a>00045     <span class="keywordtype">int</span> <a class="code" href="class_c_table.html#a1e48af0780c0e86c42cb2223a55e2545" title="Récupere le nombre de balles maximum pour la seance.">getBallesObjectif</a>(); 
+<a name="l00046"></a>00046     <span class="keywordtype">int</span> <a class="code" href="class_c_table.html#aa38bf3967d446977f089738cc9cfca52" title="Récupere le nombre de balles correspondant à la zone objectif actuel.">getBallesEnchainees</a>(); 
+<a name="l00047"></a>00047     <span class="keywordtype">int</span> <a class="code" href="class_c_table.html#a1fd08361afa77ff4013cb229490bd19c" title="Récupere le nombre de balles enchainées.">getBallesHorsTable</a>(); 
+<a name="l00048"></a>00048     <span class="keywordtype">int</span> <a class="code" href="class_c_table.html#a4de7b5c0505bd63585da07b30b23b583" title="Récupere le nombre de balles hors table.">getZoneToucheePrec</a>(); 
+<a name="l00049"></a>00049     <span class="keywordtype">void</span> <a class="code" href="class_c_table.html#a174464b5750a2bfb19c9de5c6fb89a7e" title="Récupere la zone touchée précédente.">setBallesMaximum</a>(<span class="keywordtype">int</span> nb); 
+<a name="l00050"></a>00050     uint8_t <a class="code" href="class_c_table.html#a8ca6682b88e792dedad7300dd6563713" title="Définis le nombre de balles maximum pour la séance.">getZoneObjectif</a>(); 
+<a name="l00052"></a>00052     <span class="keywordtype">bool</span> <a class="code" href="class_c_table.html#abc5da47f6e867edf0d6b3de3bbe6a508" title="Recupère le numero de la case Objectif.">getBalleCoteTablePrec</a>();   
+<a name="l00053"></a>00053     <span class="keywordtype">bool</span> <a class="code" href="class_c_table.html#a68234a18c75bacfc219f5b4cc0ee230c" title="Récupère le coté de la table ou la balle a frapé en dernier.">getBalleCoteTable</a>();   
+<a name="l00055"></a>00055     <span class="keywordtype">void</span> <a class="code" href="class_c_table.html#ae92484de21887b5ee622f055ac06239a" title="Récupère le coté de la table ou la balle a frapé juste avant la derniere.">setLayerEcran</a>(uint8_t layer, <span class="keywordtype">float</span> tailleFenetreY); 
+<a name="l00057"></a>00057 <span class="comment">//------------------------------------</span>
+<a name="l00058"></a>00058 
+<a name="l00059"></a>00059 <span class="keyword">private</span>:
+<a name="l00060"></a>00060     <span class="keywordtype">void</span> <a class="code" href="class_c_table.html#a967dcc7990005ea99e579fed798247e0" title="Corrections lié au changement de fenetre.">rafraichirNbBallesZone</a>(); 
+<a name="l00061"></a><a class="code" href="class_c_table.html#afff32f1d09825c1499618ead6f7d2a7b">00061</a>     QGridLayout*        <a class="code" href="class_c_table.html#afff32f1d09825c1499618ead6f7d2a7b" title="Rafraichit le nombre de balles par zone.">m_pGridLayout</a>;
+<a name="l00062"></a><a class="code" href="class_c_table.html#ad62d20751e9199362ddc01b2a7f2f4a8">00062</a>     QVector&lt;QLabel*&gt;    <a class="code" href="class_c_table.html#ad62d20751e9199362ddc01b2a7f2f4a8">m_pZones</a>;
+<a name="l00063"></a><a class="code" href="class_c_table.html#ad466d3f7e2c17720c67506b726618279">00063</a>     QLabel*             <a class="code" href="class_c_table.html#ad466d3f7e2c17720c67506b726618279">m_pFilet</a>;
+<a name="l00064"></a><a class="code" href="class_c_table.html#ac3cddeb35597080f35e1137e1df83800">00064</a>     QLabel*             <a class="code" href="class_c_table.html#ac3cddeb35597080f35e1137e1df83800">m_pOverlay</a>;
+<a name="l00065"></a>00065 
+<a name="l00066"></a>00066     <span class="comment">// LOGIQUE</span>
+<a name="l00067"></a><a class="code" href="class_c_table.html#aa62a0f359fc9328e6a8c5ba6eeb1ad63">00067</a>     <span class="keywordtype">int</span>                 <a class="code" href="class_c_table.html#aa62a0f359fc9328e6a8c5ba6eeb1ad63">m_iBallesBonnes</a>;                 <span class="comment">//Balles ayant touché la table du robot</span>
+<a name="l00068"></a><a class="code" href="class_c_table.html#af6a357f9e3135a61ae7bfc71de2bef1a">00068</a>     <span class="keywordtype">int</span>                 <a class="code" href="class_c_table.html#af6a357f9e3135a61ae7bfc71de2bef1a">m_iBallesMaximum</a>;                <span class="comment">//Balles maximum pour la seance</span>
+<a name="l00069"></a><a class="code" href="class_c_table.html#aacfc6266e05f583bc8607637d0a2cd8a">00069</a>     <span class="keywordtype">int</span>                 <a class="code" href="class_c_table.html#aacfc6266e05f583bc8607637d0a2cd8a">m_iBallesTotal</a>;                  <span class="comment">//Balles ayant été lancé et bonne du robot</span>
+<a name="l00070"></a><a class="code" href="class_c_table.html#ae1910bc388618b5a5bc9d2d99645e94a">00070</a>     <span class="keywordtype">int</span>                 <a class="code" href="class_c_table.html#ae1910bc388618b5a5bc9d2d99645e94a">m_iBallesEnchainees</a>;          <span class="comment">//Balles renvoyé d&#39;affilée, reset en cas de faute</span>
+<a name="l00071"></a><a class="code" href="class_c_table.html#a40ce5bc88ef4f87a07841d37cfb589fe">00071</a>     <span class="keywordtype">int</span>                 <a class="code" href="class_c_table.html#a40ce5bc88ef4f87a07841d37cfb589fe">m_iBallesEnchaineesMax</a>;          <span class="comment">//Balles renvoyé d&#39;affilée</span>
+<a name="l00072"></a><a class="code" href="class_c_table.html#ac3368af6c35ade8cb50cfa159a95ec89">00072</a>     <span class="keywordtype">int</span>                 <a class="code" href="class_c_table.html#ac3368af6c35ade8cb50cfa159a95ec89">m_iBallesHorsTable</a>;                 <span class="comment">//Balles hors table</span>
+<a name="l00073"></a><a class="code" href="class_c_table.html#a1b0daf948f69c2ee3670a4b0920acc82">00073</a>     <span class="keywordtype">int</span>                 <a class="code" href="class_c_table.html#a1b0daf948f69c2ee3670a4b0920acc82">m_iBallesDansZone</a>[<a class="code" href="const_8h.html#a94439adf310c755550b3efe018fc5b26">NB_ZONES</a>];    <span class="comment">//Balles dans la zone n</span>
+<a name="l00074"></a>00074 
+<a name="l00075"></a>00075     <span class="comment">// PARTIE GRAPHIQUE, CASES</span>
+<a name="l00076"></a><a class="code" href="class_c_table.html#addebc1aebd4f04d5b2d18d4bcfdb142c">00076</a>     <span class="keywordtype">int</span>                 <a class="code" href="class_c_table.html#addebc1aebd4f04d5b2d18d4bcfdb142c">m_iZoneTouchee</a>;     <span class="comment">//ACTUELLE</span>
+<a name="l00077"></a><a class="code" href="class_c_table.html#af981421e5d1adb9be363db281f56af34">00077</a>     <span class="keywordtype">int</span>                 <a class="code" href="class_c_table.html#af981421e5d1adb9be363db281f56af34">m_iZoneToucheePrec</a>; <span class="comment">//PRECEDENTE</span>
+<a name="l00078"></a><a class="code" href="class_c_table.html#aed9064714ef679ee26742429add7464c">00078</a>     <span class="keywordtype">int</span>                 <a class="code" href="class_c_table.html#aed9064714ef679ee26742429add7464c">m_iZoneRobot</a>;
+<a name="l00079"></a><a class="code" href="class_c_table.html#abccb0ee6a83aaf06e0a757cf6b032dcf">00079</a>     <span class="keywordtype">int</span>                 <a class="code" href="class_c_table.html#abccb0ee6a83aaf06e0a757cf6b032dcf">m_iZoneObjectif</a>;
+<a name="l00080"></a>00080 
+<a name="l00081"></a><a class="code" href="class_c_table.html#acd2d587ccd12395986ec8608021af363">00081</a>     <span class="keywordtype">bool</span>                <a class="code" href="class_c_table.html#acd2d587ccd12395986ec8608021af363">m_bBalleCoteTable</a>;       <span class="comment">//Coté de la table 1 = robot</span>
+<a name="l00082"></a><a class="code" href="class_c_table.html#ad1a286e7ae744ce859e22102027adeb5">00082</a>     <span class="keywordtype">bool</span>                <a class="code" href="class_c_table.html#ad1a286e7ae744ce859e22102027adeb5">m_bBalleCoteTablePrec</a>;   <span class="comment">//Coté de la table précedent</span>
+<a name="l00083"></a>00083 
+<a name="l00084"></a>00084     <span class="comment">// CSS</span>
+<a name="l00085"></a><a class="code" href="class_c_table.html#aff18ebf1fa1657364a60eef3559589bb">00085</a>     QFont               <a class="code" href="class_c_table.html#aff18ebf1fa1657364a60eef3559589bb">m_font</a>;
+<a name="l00086"></a><a class="code" href="class_c_table.html#a3e888e03dff1768a8d5ba61ef7bce4df">00086</a>     QFont               <a class="code" href="class_c_table.html#a3e888e03dff1768a8d5ba61ef7bce4df">m_fontBig</a>;
+<a name="l00087"></a><a class="code" href="class_c_table.html#a575484734db08e16820c42187cf6e20f">00087</a>     QFont               <a class="code" href="class_c_table.html#a575484734db08e16820c42187cf6e20f">m_fontOverlay</a>;
+<a name="l00088"></a><a class="code" href="class_c_table.html#afb519686f3ee4e48ca2e86c7485dbb78">00088</a>     QString             <a class="code" href="class_c_table.html#afb519686f3ee4e48ca2e86c7485dbb78">m_fondInactif</a>;
+<a name="l00089"></a><a class="code" href="class_c_table.html#a37ff9645885e35f5e2d64242c209881d">00089</a>     QString             <a class="code" href="class_c_table.html#a37ff9645885e35f5e2d64242c209881d">m_fondActif</a>;
+<a name="l00090"></a><a class="code" href="class_c_table.html#aa55c3efe3ebbaf0ffd5adbd5a5abbf08">00090</a>     QString             <a class="code" href="class_c_table.html#aa55c3efe3ebbaf0ffd5adbd5a5abbf08">m_fondRobot</a>;
+<a name="l00091"></a><a class="code" href="class_c_table.html#a59e4fd87ed252af8609571cae3c6f7f0">00091</a>     QString             <a class="code" href="class_c_table.html#a59e4fd87ed252af8609571cae3c6f7f0">m_fondObjectif</a>;
+<a name="l00092"></a><a class="code" href="class_c_table.html#accb3b50c685d7bc7106f9560c2c7fee8">00092</a>     QString             <a class="code" href="class_c_table.html#accb3b50c685d7bc7106f9560c2c7fee8">m_fondRate</a>;
+<a name="l00093"></a>00093 
+<a name="l00094"></a>00094 <span class="comment">//------------------------------------</span>
+<a name="l00095"></a>00095     
+<a name="l00096"></a>00096 <span class="keyword">public</span> slots:
+<a name="l00097"></a>00097     <span class="keywordtype">void</span> <a class="code" href="class_c_table.html#aa8c6510504b606c05d65b64947ff83a5">rafraichirInactif</a>(); 
+<a name="l00098"></a>00098 };
+<a name="l00099"></a>00099 
+<a name="l00100"></a>00100 <span class="preprocessor">#endif // TABLE_H</span>
+</pre></div></div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Généré le Jeudi Juin 7 2018 20:50:18 pour TTPA (Écran) par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

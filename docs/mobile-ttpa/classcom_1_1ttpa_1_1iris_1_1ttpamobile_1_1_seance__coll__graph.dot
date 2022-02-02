@@ -1,0 +1,7 @@
+digraph "com.ttpa.iris.ttpamobile.Seance"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{com.ttpa.iris.ttpamobile.\lSeance\n|- id\l- frequence\l- nombreBalles\l- effet\l- intensiteEffet\l- puissance\l- rotation\l- zoneObjectif\l- zoneRobot\l- tauxReussite\l- dateDebut\l- dateFin\l- idJoueur\l|+ Seance()\l+ Seance()\l+ horodaterBD()\l+ getId()\l+ setId()\l+ getFrequence()\l+ setFrequence()\l+ getNombreBalles()\l+ setNombreBalles()\l+ setEffet()\let 19 de plus...\l~ getIntensiteEffet()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

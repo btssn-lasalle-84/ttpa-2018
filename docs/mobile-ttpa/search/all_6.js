@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['getadresse',['getAdresse',['../classcom_1_1ttpa_1_1iris_1_1ttpamobile_1_1_peripherique_bluetooth.html#af7061e87fd6fdae7a6e19b4185b6d0de',1,'com::ttpa::iris::ttpamobile::PeripheriqueBluetooth']]],
+  ['getbdd',['getBDD',['../classcom_1_1ttpa_1_1iris_1_1ttpamobile_1_1_serveur_b_d_d.html#aada5cddf44c67f49790e2f1227eac6a5',1,'com::ttpa::iris::ttpamobile::ServeurBDD']]],
+  ['getdatedebut',['getDateDebut',['../classcom_1_1ttpa_1_1iris_1_1ttpamobile_1_1_seance.html#a965a12bed158886f1df3176660f0b84f',1,'com::ttpa::iris::ttpamobile::Seance']]],
+  ['getdatefin',['getDateFin',['../classcom_1_1ttpa_1_1iris_1_1ttpamobile_1_1_seance.html#aac1f24db8cd90e9d27fbcf256477ddf6',1,'com::ttpa::iris::ttpamobile::Seance']]],
+  ['getdevice',['getDevice',['../classcom_1_1ttpa_1_1iris_1_1ttpamobile_1_1_peripherique_bluetooth.html#af83aa41d7dccac64be2bbfe6dcaf1b7b',1,'com::ttpa::iris::ttpamobile::PeripheriqueBluetooth']]],
+  ['geteffet',['getEffet',['../classcom_1_1ttpa_1_1iris_1_1ttpamobile_1_1_seance.html#a75440fe543510bef76420e62c295207c',1,'com::ttpa::iris::ttpamobile::Seance']]],
+  ['geteffetballes',['getEffetBalles',['../classcom_1_1ttpa_1_1iris_1_1ttpamobile_1_1_parametre_seance.html#a82731fc379235f4b13485c7ea3fc24e2',1,'com::ttpa::iris::ttpamobile::ParametreSeance']]],
+  ['getfrequence',['getFrequence',['../classcom_1_1ttpa_1_1iris_1_1ttpamobile_1_1_seance.html#ab278ba8cb69d8cc77049f2beb46ea0c2',1,'com::ttpa::iris::ttpamobile::Seance']]],
+  ['getfrequenceballes',['getFrequenceBalles',['../classcom_1_1ttpa_1_1iris_1_1ttpamobile_1_1_parametre_seance.html#aa693c460193029f32613b13d423ad48b',1,'com::ttpa::iris::ttpamobile::ParametreSeance']]],
+  ['getid',['getId',['../classcom_1_1ttpa_1_1iris_1_1ttpamobile_1_1_joueur.html#a15d3edecbcf7b31e16d47054dcc5a739',1,'com.ttpa.iris.ttpamobile.Joueur.getId()'],['../classcom_1_1ttpa_1_1iris_1_1ttpamobile_1_1_seance.html#af0c3d5a715557492812d59fe2bd94714',1,'com.ttpa.iris.ttpamobile.Seance.getId()']]],
+  ['getidjoueur',['getIdJoueur',['../classcom_1_1ttpa_1_1iris_1_1ttpamobile_1_1_seance.html#aeadce32b9e990eb864d230ae057f80e4',1,'com::ttpa::iris::ttpamobile::Seance']]],
+  ['getidjoueurparametres',['getIdJoueurParametres',['../classcom_1_1ttpa_1_1iris_1_1ttpamobile_1_1_serveur_b_d_d.html#a2ec92cd052bf9a1625f03711426264c5',1,'com::ttpa::iris::ttpamobile::ServeurBDD']]],
+  ['getjoueur',['getJoueur',['../classcom_1_1ttpa_1_1iris_1_1ttpamobile_1_1_serveur_b_d_d.html#abd2c3623d44cd07ef3d59dd3a4aaa625',1,'com.ttpa.iris.ttpamobile.ServeurBDD.getJoueur(int id)'],['../classcom_1_1ttpa_1_1iris_1_1ttpamobile_1_1_serveur_b_d_d.html#ad87c8844734f30b6cff7753d865302ce',1,'com.ttpa.iris.ttpamobile.ServeurBDD.getJoueur(String nom)']]],
+  ['getjoueurs',['getJoueurs',['../classcom_1_1ttpa_1_1iris_1_1ttpamobile_1_1_serveur_b_d_d.html#a4f40e63ace1ef5e8b380911440275737',1,'com::ttpa::iris::ttpamobile::ServeurBDD']]],
+  ['getnom',['getNom',['../classcom_1_1ttpa_1_1iris_1_1ttpamobile_1_1_joueur.html#aede5e0a7bb0be3c5ec29dc099114e322',1,'com.ttpa.iris.ttpamobile.Joueur.getNom()'],['../classcom_1_1ttpa_1_1iris_1_1ttpamobile_1_1_peripherique_bluetooth.html#a6fa180a42b3c3fa740099a6594aa2544',1,'com.ttpa.iris.ttpamobile.PeripheriqueBluetooth.getNom()']]],
+  ['getnombreballes',['getNombreBalles',['../classcom_1_1ttpa_1_1iris_1_1ttpamobile_1_1_parametre_seance.html#a24a6a006d4f8563275c5048804b19edd',1,'com.ttpa.iris.ttpamobile.ParametreSeance.getNombreBalles()'],['../classcom_1_1ttpa_1_1iris_1_1ttpamobile_1_1_seance.html#a7e481daf8e646f6cca65cfdeced87f7b',1,'com.ttpa.iris.ttpamobile.Seance.getNombreBalles()']]],
+  ['getnomjoueur',['getNomJoueur',['../classcom_1_1ttpa_1_1iris_1_1ttpamobile_1_1_parametre_seance.html#a09dfb6df9a3d3cc674509a70c126e3d3',1,'com::ttpa::iris::ttpamobile::ParametreSeance']]],
+  ['getpuissance',['getPuissance',['../classcom_1_1ttpa_1_1iris_1_1ttpamobile_1_1_seance.html#afe96e3623dfa3f4fe874db1420bb1935',1,'com::ttpa::iris::ttpamobile::Seance']]],
+  ['getpuissanceballes',['getPuissanceBalles',['../classcom_1_1ttpa_1_1iris_1_1ttpamobile_1_1_parametre_seance.html#a3b45e16495b8307916f92561372eb879',1,'com::ttpa::iris::ttpamobile::ParametreSeance']]],
+  ['getrotation',['getRotation',['../classcom_1_1ttpa_1_1iris_1_1ttpamobile_1_1_parametre_seance.html#af12a018e4afad5e7cc73dd1cd13e0d8a',1,'com.ttpa.iris.ttpamobile.ParametreSeance.getRotation()'],['../classcom_1_1ttpa_1_1iris_1_1ttpamobile_1_1_seance.html#ac2690f844493d1ba782d794dbbbf4b8d',1,'com.ttpa.iris.ttpamobile.Seance.getRotation()']]],
+  ['getseance',['getSeance',['../classcom_1_1ttpa_1_1iris_1_1ttpamobile_1_1_serveur_b_d_d.html#a291fe1ed50487e17c6ef8290a9d73efc',1,'com::ttpa::iris::ttpamobile::ServeurBDD']]],
+  ['getseances',['getSeances',['../classcom_1_1ttpa_1_1iris_1_1ttpamobile_1_1_serveur_b_d_d.html#a4e507324222517a1441f451fb1ce7677',1,'com.ttpa.iris.ttpamobile.ServeurBDD.getSeances()'],['../classcom_1_1ttpa_1_1iris_1_1ttpamobile_1_1_serveur_b_d_d.html#ad6fe1414aed380c0caaf3a7a26c2e3ad',1,'com.ttpa.iris.ttpamobile.ServeurBDD.getSeances(int idJoueur)']]],
+  ['gettauxreussite',['getTauxReussite',['../classcom_1_1ttpa_1_1iris_1_1ttpamobile_1_1_seance.html#a6f81529ed985f19d68f4107cf083a8fb',1,'com::ttpa::iris::ttpamobile::Seance']]],
+  ['getzoneobjectif',['getZoneObjectif',['../classcom_1_1ttpa_1_1iris_1_1ttpamobile_1_1_seance.html#ad2f8c96ea9d0e028143b6c1bee450195',1,'com::ttpa::iris::ttpamobile::Seance']]],
+  ['getzonerobot',['getZoneRobot',['../classcom_1_1ttpa_1_1iris_1_1ttpamobile_1_1_seance.html#a92d61d93e2d8460f60daa78f087298f7',1,'com::ttpa::iris::ttpamobile::Seance']]]
+];
